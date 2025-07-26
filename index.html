@@ -6,7 +6,6 @@
   <title>Space Odyssey</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
-    /* Body and Background */
     body {
       margin: 0;
       padding: 0;
@@ -14,9 +13,9 @@
       color: #ffffff;
       font-family: 'Orbitron', sans-serif;
       overflow-x: hidden;
+      position: relative;
     }
 
-    /* Star field animation */
     body::before {
       content: '';
       position: absolute;
@@ -33,7 +32,38 @@
       to { background-position: -10000px 10000px; }
     }
 
-    /* Header */
+    /* Floating Planet Images */
+    .planet {
+      position: absolute;
+      opacity: 0.15;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .planet1 {
+      top: 10%;
+      left: 5%;
+      width: 200px;
+    }
+
+    .planet2 {
+      top: 50%;
+      right: 10%;
+      width: 250px;
+    }
+
+    .planet3 {
+      bottom: 5%;
+      left: 40%;
+      width: 150px;
+    }
+
+    .planet4 {
+      top: 30%;
+      left: 70%;
+      width: 180px;
+    }
+
     header {
       text-align: center;
       padding: 60px 20px;
@@ -48,7 +78,6 @@
       text-shadow: 0 0 8px #66ccff;
     }
 
-    /* Main Content */
     .container {
       padding: 40px 10%;
     }
@@ -78,7 +107,6 @@
       line-height: 1.6;
     }
 
-    /* Footer */
     footer {
       text-align: center;
       padding: 20px;
@@ -89,6 +117,12 @@
   </style>
 </head>
 <body>
+  <!-- Planets in Background -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Jupiter_by_Cassini-Huygens.jpg" class="planet planet1" alt="Planet">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" class="planet planet2" alt="Planet">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Mercury_in_true_color.jpg" class="planet planet3" alt="Planet">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Neptune_Full.jpg" class="planet planet4" alt="Planet">
+
   <header>
     <h1>Welcome to the Cosmos</h1>
   </header>
@@ -97,31 +131,6 @@
     <div class="card">
       <h2>Galactic Module</h2>
       <p>Placeholder content here. You can describe planets, space missions, or stellar phenomena using this space card.</p>
-    </div>
-
-    <div class="card">
-      <h2>Star System Analysis</h2>
-      <p>This section can hold scientific data, images, or other space-related details that fit the futuristic theme.</p>
-    </div>
-
-    <div class="card">
-      <h2>Star System Analysis</h2>
-      <p>This section can hold scientific data, images, or other space-related details that fit the futuristic theme.</p>
-    </div>
-
-    <div class="card">
-      <h2>Star System Analysis</h2>
-      <p>This section can hold scientific data, images, or other space-related details that fit the futuristic theme.</p>
-    </div>
-
-    <div class="card">
-      <h2>Star System Analysis</h2>
-      <p>This section can hold scientific data, images, or other space-related details that fit the futuristic theme.</p>
-    </div>
-
-    <div class="card">
-      <h2>Star System Analysis</h2>
-      <p>This section can hold scientific data, images, or other space-related details that fit the futuristic theme.</p>
     </div>
 
     <div class="card">
